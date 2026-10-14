@@ -1,0 +1,19 @@
+# Maintainer records and distribution archives
+/work/
+.DS_Store
+*.zip
+
+# Generated report outputs
+/build/
+/report_*.tex
+/report_*.pdf
+
+# LaTeX intermediate files
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+*.out
+*.toc

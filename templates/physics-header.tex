@@ -1,0 +1,24 @@
+% Optional preamble configuration for CFD research reports.
+% Include through Pandoc --include-in-header. This is a preamble fragment.
+% Engine: XeLaTeX. Pandoc's default template provides math/graphics helpers.
+\usepackage[UTF8,fontset=fandol]{ctex}
+\usepackage{array,booktabs}
+\usepackage{xcolor}
+\usepackage{fancyvrb}
+
+% Set common report headings in English.
+\renewcommand{\abstractname}{Abstract}
+\renewcommand{\contentsname}{Contents}
+\renewcommand{\listtablename}{List of Tables}
+\renewcommand{\refname}{References}
+\renewcommand{\figurename}{Figure}
+\renewcommand{\tablename}{Table}
+
+% This optional block preserves raw prompt text for a work copy.
+% Split long blocks before using it. It is not required in a reading copy.
+\newenvironment{promptblock}
+{\VerbatimEnvironment
+ \begin{Verbatim}[fontsize=\small,frame=single,
+ rulecolor=\color{gray!60},framesep=6pt,
+ label={\textsf{Prompt}},samepage=true]}
+{\end{Verbatim}}
